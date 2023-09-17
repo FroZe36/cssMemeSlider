@@ -4,11 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <title>cssMemeSlider</title>
 </head>
 
 <body>
-
+  <div class="container">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <input type="radio" name="slider" id="slide4">
+      <div class="slides">
+        <img src="./img/photo1.jpg" alt="imgMem" class="slide slide1">
+        <img src="./img/photo2.jpg" alt="imgMem" class="slide slide2">
+        <img src="./img/photo3.jpg" alt="imgMem" class="slide slide3">
+        <img src="./img/photo4.jpg" alt="imgMem" class="slide slide4">
+      </div>
+    <div class="slides-description">
+      <h2 class="slide-descr">Slide1</h2>
+      <h2 class="slide-descr">Slide2</h2>
+      <h2 class="slide-descr">Slide3</h2>
+      <h2 class="slide-descr">Slide4</h2>
+    </div>
+    <div class="navigation">
+      <label class="navigation-label" for="slide1">
+        <span class="navigation-button"></span>
+      </label>
+      <label class="navigation-label" for="slide2">
+        <span class="navigation-button"></span>
+      </label>
+      <label class="navigation-label" for="slide3">
+        <span class="navigation-button"></span>
+      </label>
+      <label class="navigation-label" for="slide4">
+        <span class="navigation-button"></span>
+      </label>
+    </div>
+  </div>
 </body>
 
 </html>
