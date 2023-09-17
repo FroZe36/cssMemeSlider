@@ -94,4 +94,19 @@ input[type='radio'] {
   opacity: 1;
   animation: imageSet 1s ease-in;
 }
-
+@keyframes descrSet {
+  from {
+    transform: scale(3, 5);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+#slide1:checked ~ .wrapper .slides-description .slide-descr:nth-child(1),
+#slide2:checked ~ .wrapper .slides-description .slide-descr:nth-child(2),
+#slide3:checked ~ .wrapper .slides-description .slide-descr:nth-child(3),
+#slide4:checked ~ .wrapper .slides-description .slide-descr:nth-child(4) {
+  z-index: 1;
+  opacity: 1;
+  animation: descrSet 1s ease-in;
+}
