@@ -29,6 +29,7 @@ input[type='radio'] {
   opacity: 0;
 }
 .wrapper {
+  max-width: 38.3rem;
   width: 35vw;
   display: flex;
   justify-content: space-between;
@@ -64,6 +65,10 @@ input[type='radio'] {
 }
 .navigation-label:hover .navigation-button {
   background-color: #00bfff;
+  transition: background 0.3s;
+}
+.navigation-label:active .navigation-button {
+  background-color: white;
   transition: background 0.3s;
 }
 #slide1:checked ~ .wrapper .navigation .navigation-label:nth-child(1),
